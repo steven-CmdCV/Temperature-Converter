@@ -5,7 +5,7 @@ int main(){
 
 float fahrenheit;
 float celsius;
-int opcion;
+int option;
 bool menu = true;
 
 while (menu){
@@ -17,9 +17,9 @@ while (menu){
     cout << "3. Exit\n\n";
 
     cout << "Choose the temperature you would like to convert: ";
-    cin >> opcion;
+    cin >> option;
 
-    if (opcion == 1) {
+    if (option == 1) {
 
         cout << "Introduce the Fahrenheit value: ";
         cin >> fahrenheit;
@@ -27,7 +27,7 @@ while (menu){
         cout << fahrenheit << " degrees Fahrenheit is equal to " << (fahrenheit - 32) *  5 / 9 << " degrees Celsius\n\n";
     }
 
-    else if (opcion == 2) {
+    else if (option == 2) {
 
         cout << "Introduce the Celsius value: ";
         cin >> celsius;
@@ -36,7 +36,7 @@ while (menu){
         
     }
 
-    else if (opcion == 3) {
+    else if (option == 3) {
         menu = false;
         cout << "\nYou have exited successfully.\n";
     }
